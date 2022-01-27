@@ -135,3 +135,34 @@ function spreadOperators() {
   }
   //console.log(magic(1,2,3,4,5,6))
 }
+
+function classConstrExtends() {
+
+  class Animal {
+    constructor(name) {
+      this.name = name
+    }
+    speak() {
+      console.log(`${this.name} makes a noise.`)
+    }
+  }
+  class Dog extends Animal {
+    speak() {
+      super.speak()
+      console.log(`${this.name} barks.`)
+    }
+  }
+  let dog = new Dog('Rex')
+  dog.speak()
+} // classConstrExtends()
+
+function mapsnSets() {
+  let map = new Map()
+  map.set('k1', 'v1').set('k2', 'v2')
+  
+  console.log(map.get('k1'))
+  console.log(map.has('k2'))
+
+  for (let kv of map.entries()) console.log(`${kv[0]} : ${kv[1]}`)
+
+} // mapsnSets()
