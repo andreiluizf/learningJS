@@ -166,3 +166,29 @@ function mapsnSets() {
   for (let kv of map.entries()) console.log(`${kv[0]} : ${kv[1]}`)
 
 } // mapsnSets()
+
+function wordsTest() {
+  class Add {
+    constructor(...words) {
+        this.words = words
+    }
+    print() {
+      let items = this.words
+      let outputAllTogether = '$'
+      for(let i=0; i<items.length; i++) {
+        outputAllTogether += items[i] + '$'
+      }
+      console.log(outputAllTogether)
+    }
+  }
+
+  var x = new Add("hehe", "hoho", "haha", "hihi", "huhu")
+  var y = new Add("this", "is", "awesome")
+  var z = new Add("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit")
+
+  x.print()
+  y.print()
+  z.print()
+
+
+} // wordsTest()
