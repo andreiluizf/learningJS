@@ -172,16 +172,17 @@ function wordsTest() {
     constructor(...words) {
         this.words = words
     }
+    //your code goes here
     print() {
-      let items = this.words
-      let outputAllTogether = '$'
-      for(let i=0; i<items.length; i++) {
-        outputAllTogether += items[i] + '$'
-      }
-      console.log(outputAllTogether)
+        let items = this.words
+        let outputAllTogether = '$'
+        for(let i=0; i<items.length; i++) {
+          outputAllTogether += items[i] + '$'
+        }
+        console.log(outputAllTogether)
     }
   }
-
+  
   var x = new Add("hehe", "hoho", "haha", "hihi", "huhu")
   var y = new Add("this", "is", "awesome")
   var z = new Add("lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit")
@@ -189,6 +190,5 @@ function wordsTest() {
   x.print()
   y.print()
   z.print()
-
 
 } // wordsTest()
